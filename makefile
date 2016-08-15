@@ -10,8 +10,8 @@ ClusterGen: $(OBJSOC) main.f90
 		$(FC90) $(FCFLAGS) -o ClusterGenerator main.f90  $(LIBS) $(OBJSOC)
 		
 
-EXCL_VOL.o: EXCL_VOL.f90
-		$(FC90) -c EXCL_VOL.f90 
+EXCL_VOL.o: EX_VOL.f90
+		$(FC90) -c EX_VOL.f90 
 
 		
 clean: 
