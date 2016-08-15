@@ -9,9 +9,8 @@ OBJMOD = $(wildcard *.mod)
 ClusterGen: $(OBJSOC) main.f90 
 		$(FC90) $(FCFLAGS) -o ClusterGenerator main.f90  $(LIBS) $(OBJSOC)
 		
-
-EXCL_VOL.o: EX_VOL.f90
-		$(FC90) -c EX_VOL.f90 
+EXCL_VOL.o: ex_vol.f90
+		$(FC90) -c ex_vol.f90 
 
 		
 clean: 
